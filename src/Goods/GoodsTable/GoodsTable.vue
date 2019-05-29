@@ -10,7 +10,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr v-for="(item, index) of goods" :key="item.id">
+        <tr v-for="(item, index) of goodsAll" :key="item.id">
           <th scope="row">{{index+1}}</th>
           <td>{{item.name}}</td>
           <td>{{item.UoM}}</td>
@@ -24,28 +24,10 @@
 <script>
 export default {
   name: "GoodsTable",
+  props:["goodsAll"],
   data() {
     return {
-        goods:[
-            {
-                id: 1,
-                name: "баннер 330",
-                UoM: "м2",
-                sum: 300
-            },
-            {
-                id: 2,
-                name: "баннер 550",
-                UoM: "м2",
-                sum: 150
-            },
-            {
-                id: 3,
-                name: "баннер 440",
-                UoM: "м2",
-                sum: 200
-            }
-        ]
+        
     };
   }
 };

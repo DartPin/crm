@@ -27,38 +27,10 @@
 <script>
 export default {
   name: 'GoodsPlus',
+  props:["documents"],
   data () {
     return {
-        documents:[
-            {
-                id: 1,
-                name: "нак. №351",
-                sailer: "Продавец баннеров",
-                date: "31 мая",
-                sum: 23199.01
-            },
-            {
-                id: 2,
-                name: "нак. №353",
-                sailer: "Продавец пленки",
-                date: "31 мая",
-                sum: 18546.09
-            },
-            {
-                id: 3,
-                name: "нак. №355",
-                sailer: "Продавец баннеров",
-                date: "31 мая",
-                sum: 56324.00
-            },
-            {
-                id: 4,
-                name: "нак. №356",
-                sailer: "Продавец пленки",
-                date: "31 мая",
-                sum: 16542.41
-            },
-        ]
+        
     }
   },
   methods:{
